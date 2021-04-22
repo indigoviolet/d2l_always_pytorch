@@ -10,12 +10,12 @@
     "128": "icons/torch128.png"
   },
   "permissions": [
-    "https://*.d2l.ai/*"
+    "*://*.d2l.ai/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://*.d2l.ai/*"
+        "*://*.d2l.ai/*"
       ],
       "js": [
         "src/inject/inject.js"
