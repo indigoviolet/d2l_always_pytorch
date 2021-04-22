@@ -1,0 +1,25 @@
+{
+  "name": "D2L Always PyTorch",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Always PyTorch on d2l.ai",
+  "homepage_url": "https://d2l.ai",
+  "author": "Venky Iyer <romansix.org>",
+  "icons": {
+    "48": "icons/torch48.png",
+    "128": "icons/torch128.png"
+  },
+  "permissions": [
+    "https://*.d2l.ai/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.d2l.ai/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}

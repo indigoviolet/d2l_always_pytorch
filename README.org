@@ -1,0 +1,7 @@
+
+A simple extension to always switch to Pytorch on d2l.ai
+
+
+* Credits
+
+Icons made by https://www.freepik.com from https://www.flaticon.com/
