@@ -4,7 +4,10 @@ chrome.extension.sendMessage({}, function(response) {
 		clearInterval(readyStateCheckInterval);
 
 		console.log("Hello from Always Pytorch extension");
-		document.querySelector("div.mdl-tabs__tab-bar a[href*='pytorch']").click()
+		var tab = document.querySelector("div.mdl-tabs__tab-bar a[href*='pytorch']")
+		if (tab) {
+			tab.click()
+		}
 	}
 	}, 10);
 });
